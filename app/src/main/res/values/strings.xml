@@ -2,4 +2,7 @@
     <string name="app_name">eventos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="findevent">Encuentra un evento</string>
+    <string name="events">Eventos en vivo</string>
+    <string name="todo">TODO</string>
 </resources>
