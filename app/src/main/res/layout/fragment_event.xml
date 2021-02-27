@@ -9,18 +9,18 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="431dp"
-        android:layout_height="96dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         app:cardBackgroundColor="@color/purple_700"
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="444dp"
-            android:layout_height="98dp">
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
 
             <ImageView
                 android:id="@+id/img_back"
@@ -29,12 +29,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="399dp"
-                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_back"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/txt_events"
@@ -57,35 +57,26 @@
 
     </androidx.cardview.widget.CardView>
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints">
-
-</FrameLayout>
 
     <EditText
         android:id="@+id/txt_find_event"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
+        android:inputType="text"
         android:background="@drawable/custom_edittext"
         android:drawableRight="@drawable/ic_search"
-        android:focusableInTouchMode="false"
         android:hint="@string/findevent"
-        android:importantForAutofill="no"
-        android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textAlignment="textStart"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.0" />
+        android:importantForAutofill="no" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
